@@ -75,7 +75,6 @@ class MahasiswaController extends Controller
      */
     public function show($id)
     {
-        //
         $data = Mahasiswa::where('id', '=', $id)->get();
 
         if($data) {
@@ -105,7 +104,6 @@ class MahasiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
         try {
             $request->validate([
                 'username' => 'required',
@@ -139,7 +137,6 @@ class MahasiswaController extends Controller
      */
     public function destroy($id)
     {
-        //
         try {
             $mahasiswa = Mahasiswa::findOrFail($id);
     

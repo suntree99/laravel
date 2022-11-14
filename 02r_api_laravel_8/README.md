@@ -183,7 +183,6 @@
     ```php
     public function show($id)
     {
-        //
         $data = Mahasiswa::where('id', '=', $id)->get();
 
         if($data) {
@@ -207,7 +206,6 @@
     ```php
     public function update(Request $request, $id)
     {
-        //
         try {
             $request->validate([
                 'username' => 'required',
@@ -247,7 +245,6 @@
     ```php
     public function destroy($id)
     {
-        //
         try {
             $mahasiswa = Mahasiswa::findOrFail($id);
     
